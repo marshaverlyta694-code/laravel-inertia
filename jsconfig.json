@@ -1,0 +1,11 @@
+{
+    // Mengatur bantuan editor untuk mengenali alias import pada file JavaScript/Vue.
+    "compilerOptions": {
+        // Alias @/components/... diarahkan ke folder resources/js.
+        "paths": {
+            "@/*": ["./resources/js/*"]
+        }
+    },
+    // Folder dependency dan aset publik tidak perlu dianalisis sebagai source JavaScript.
+    "exclude": ["node_modules", "public"]
+}
